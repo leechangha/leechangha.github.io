@@ -97,7 +97,7 @@ p {
 
 .section__container { 
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
@@ -216,11 +216,12 @@ p {
 
 .job { 
     display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
 }
 
 .job__logo {
     width: 100px;
-    height: 20px;
 }
 
 .job__description {
@@ -234,6 +235,7 @@ p {
 }
 .job__name {
     font-size: var(--font-small);
+    font-weight: 800;
 }
 .job__description{
     font-size: var(--font-micro);
@@ -340,8 +342,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     margin: 2px;
     background-color: var(--color-light-white);
 }
@@ -377,6 +379,9 @@ p {
 .project__description h3 {
     color: var(--color-orange);
 }
+.project__description span {
+    color: var(--color-white);
+}
 
 .project__description h3:after { 
     content: '';
@@ -403,11 +408,19 @@ p {
     display: flex;
     margin: 32px 0;
 }
-
+.testimonial:nth-child(odd){
+    justify-content: flex-start;
+    padding-right: 190px;
+}
+.testimonial:nth-child(even){
+    justify-content: flex-end;
+    padding-left: 190px;
+}
 .testimonial__avatar { 
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 1px solid var(--color-grey);
 }
 
 .testimonial__avatar:nth-child(odd){
@@ -427,6 +440,7 @@ p {
     border-radius: var(--size-border-radius);
 }
 
+
 .testimonial__speech-bubble p{ 
     color: var(--color-light-grey);
     overflow-wrap: break-word;
@@ -441,6 +455,19 @@ p {
 #contact { 
     background-color: var(--color-pink);
 }
+.contact__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fas.fa-envelope,
+.fab.fa-github{
+  font-size: 30px;
+  color: white;
+  margin-right: 1rem;
+}
+
 
 .contact__title,
 .contact__email { 

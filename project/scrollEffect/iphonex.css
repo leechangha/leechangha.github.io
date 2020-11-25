@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+  box-sizing: border-box;
+
+  background: white;
+}
+
+#cover-canvas { 
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.video-wrapper { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#video-enzo { 
+  transform: scale(1);
+}

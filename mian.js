@@ -7,6 +7,10 @@ const workPosition = document.querySelector('#work').getBoundingClientRect().y;
 const testimonialPosition = document.querySelector('#testimonials').getBoundingClientRect().y;
 const contactPosition = document.querySelector('#contact').getBoundingClientRect().y;
 
+       
+console.log(`Window.inner : ${window.innerWidth}, ${window.innerHeight}`);
+console.log(` Window.outter : ${window.outerWidth}, ${window.outerHeight}`);
+console.log(` client : ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}`);
 //Make navbar transparent when it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;

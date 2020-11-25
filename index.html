@@ -52,7 +52,7 @@
         <h1>About me</h1>
         <p>
             안녕하세요. EnzoLee 입니다.<br/>
-            뭐라 설명할게 없네요. 천천히 다시 생각해서 오겠습니다.
+            뭐라 설명할게 없네요. 천천히 다시 생각해서 오겠습니다
         </p>
         <div class="about__majors">
             <div class="major">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="major__title">Mobile</div>
                 <div class="major__description">
-                        AndroidNative, AndoridJava, Kotlin, <br/>Realm, Room, MVVM
+                        AndoridJava, AndroidKotlin, React <br/>Realm, Room, MVVM
                         Koin, RetroFit
                 </div>
             </div>
@@ -82,7 +82,14 @@
         </div>
         <div class="about__jobs">
             <div class="job">
-                <img src="imgs/dalicious_logo.png" alt="where" class="job__logo"/>
+                <img src="imgs/gatda_logo.png" alt="where" class="job__logo"/>
+                <div class="job__description">
+                    <p class="job__name">같다 대형폐기물 수거, 중고물품매입 플랫폼 회사</p>
+                    <p class="job__period">2020 ~ 2020</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/dalicious_logo.svg" alt="where" class="job__logo"/>
                 <div class="job__description">
                     <p class="job__name">달리려스 온 디멘드 푸드테크 회사</p>
                     <p class="job__period">2019 ~ 2020</p>
@@ -110,15 +117,24 @@
                     <div class="skill">
                         <div class="skill__description">
                             <span>HTML</span>
-                            <span>90%</span>
+                            <span>50%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value" style="width: 90%"></div>
+                            <div class="skill__value" style="width: 50%"></div>
                         </div>
                     </div>
                     <div class="skill">
                         <div class="skill__description">
-                            <span>kotlin</span>
+                            <span>Vanilla javascript</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"  style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Kotlin</span>
                             <span>50%</span>
                         </div>
                         <div class="skill__bar">
@@ -128,11 +144,20 @@
                     <div class="skill">
                         <div class="skill__description">
                             <span>Database(SQL)</span>
-                            <span>60%</span>
+                            <span>40%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value"  style="width: 60%"></div>
+                            <div class="skill__value"  style="width: 40%"></div>
                         </div>
+                    </div>
+                    <div class="skill">
+                      <div class="skill__description">
+                          <span>React</span>
+                          <span>40%</span>
+                      </div>
+                      <div class="skill__bar">
+                          <div class="skill__value"  style="width: 40%"></div>
+                      </div>
                     </div>
                 </div>
                 <div class="skillset__right">
@@ -142,14 +167,17 @@
                             <li><span>Visual Studio Code</span></li>
                             <li><span>InteliJ</span></li>
                             <li><span>AndoridStudio</span></li>
+                            <li><span>Workbench</span></li>
+                            <li><span>visual paradigm</span></li>
                         </ul>
                     </div>
                     <div class="etc">
                         <h3 class="skillset__title">Etc</h3>
                         <ul class="etc__list">
                             <li><span>Git</span></li>
-                            <li><span>TDD</span></li>
-                            <li><span>Math</span></li>
+                            <li><span>Notion</span></li>
+                            <li><span>PostMan</span></li>
+                            <li><span>Figma</span></li>                    
                         </ul>
                     </div>
                 </div>
@@ -162,18 +190,31 @@
             <h1>My work</h1>
             <h3>Project</h3>
             <div class="work__categories">
-                <button class="category__btn selected" data-filter = "*">All<span class="category__count">8</span></button>
-                <button class="category__btn" data-filter = "front-end">Front-end<span class="category__count">3</span></button>
-                <button class="category__btn" data-filter = "back-end">Back-end<span class="category__count">3</span></button>
-                <button class="category__btn" data-filter = "mobile">Mobile<span class="category__count">8</span></button>
+                <button class="category__btn selected" data-filter = "*">All<span class="category__count">3</span></button>
+                <button class="category__btn" data-filter = "front-end">Front-end<span class="category__count">1</span></button>
+                <button class="category__btn" data-filter = "back-end">Back-end<span class="category__count">1</span></button>
+                <button class="category__btn" data-filter = "mobile">Mobile<span class="category__count">1</span></button>
             </div>
-
             <div class="work__projects">
-                <a href="https://www.naver.com" class="project" target="blank" data-type = "mobile">
+                <div class="project" data-type = "mobile">
                     <img src="imgs/projects/project_kurrant.png" alt="nothing" class="project__img">
                     <div class="project__description">
                         <h3>Kurrant App(Android)</h3>
-                        <span>설명asdfasdlkfjslkfjlksfjdslkfjdlksfjs</span>
+                        <span>외식 중계 서비스 플랫폼</span>
+                    </div>
+                </div>
+                <div class="project" data-type = "back-end">
+                    <img src="imgs/projects/bbegi_android.jpeg" alt="nothing" class="project__img">
+                    <div class="project__description">
+                        <h3>빼기(Android)</h3>
+                        <span>대형 폐기물, 중고물품매입 플랫폼</span>
+                    </div>
+                </div>
+                <a href="https://labido.net" class="project" target="blank" data-type = "front-end">
+                    <img src="imgs/projects/labido_web.png" alt="nothing" class="project__img">
+                    <div class="project__description">
+                        <h3>LABIDO(WebApplication) - 반응형 -</h3>
+                        <span>모의 클라우드 펀딩 서비스</span>
                     </div>
                 </a>
             </div>
@@ -208,7 +249,14 @@
     <!-- Content -->
     <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
-        <h2 class="contact__email">enzo.lee@gatda.com</h2>
+        <div class="contact__row">
+            <i class="fas fa-envelope"></i>
+            <h2 class="contact__email">enzolee.contact@gmail.com</h2>
+        </div>
+        <div class="contact__row">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/leechangha"><h2 class="contact__email">enzo Lee</h2></a>
+        </div>
     </section>
 
     <!-- ArrowUpButton -->
