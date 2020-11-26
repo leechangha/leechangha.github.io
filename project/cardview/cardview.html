@@ -6,37 +6,48 @@
     <title>Responsive Card Hover Effects</title>
     <link rel="stylesheet" href="cardview.css">
     <script src="cardview.js"></script>
+    <script src="https://kit.fontawesome.com/8380d61d90.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">   
+        $(document).ready( function() {
+
+            $("#header").load("../header.html");  // 원하는 파일 경로를 삽입하면 된다
+
+        });
+    </script>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="imgBox">
-                <img src="image/img1.jpeg" alt="awesome">
+    <header id="header"></header>
+    <div class="wrapper">
+        <div class="container">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="image/img1.jpeg" alt="awesome">
+                </div>
+                <div class="content">
+                    <h2>Card One</h2>
+                    <p>We are proud to have teamed up with Google to offer desktop versions of their popular Google Fonts free of charge. Offered for use in print, these fonts are delivered using SkyFont’s patent-pending font delivery technology and can be used anywhere.</p>
+                </div>
             </div>
-            <div class="content">
-                <h2>Card One</h2>
-                <p>We are proud to have teamed up with Google to offer desktop versions of their popular Google Fonts free of charge. Offered for use in print, these fonts are delivered using SkyFont’s patent-pending font delivery technology and can be used anywhere.</p>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="image/img2.jpeg" alt="awesome">
+                </div>
+                <div class="content">
+                    <h2>Card Two</h2>
+                    <p>We are proud to have teamed up with Google to offer desktop versions of their popular Google Fonts free of charge. Offered for use in print, these fonts are delivered using SkyFont’s patent-pending font delivery technology and can be used anywhere.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="image/img3.jpeg" alt="awesome">
+                </div>
+                <div class="content">
+                    <h2>Card Three</h2>
+                    <p>We are proud to have teamed up with Google to offer desktop versions of their popular Google Fonts free of charge. Offered for use in print, these fonts are delivered using SkyFont’s patent-pending font delivery technology and can be used anywhere.</p>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="imgBox">
-                <img src="image/img2.jpeg" alt="awesome">
-            </div>
-            <div class="content">
-                <h2>Card Two</h2>
-                <p>We are proud to have teamed up with Google to offer desktop versions of their popular Google Fonts free of charge. Offered for use in print, these fonts are delivered using SkyFont’s patent-pending font delivery technology and can be used anywhere.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="imgBox">
-                <img src="image/img3.jpeg" alt="awesome">
-            </div>
-            <div class="content">
-                <h2>Card Three</h2>
-                <p>We are proud to have teamed up with Google to offer desktop versions of their popular Google Fonts free of charge. Offered for use in print, these fonts are delivered using SkyFont’s patent-pending font delivery technology and can be used anywhere.</p>
-            </div>
-        </div>
-    </div>
-    
+  </div>
 </body>
 </html>

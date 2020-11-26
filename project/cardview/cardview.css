@@ -7,14 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+
+.wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     background: #16384c; 
     min-height: 100vh;
 }
-
 .container {
     position: relative;
     width: 1100px;

@@ -11,8 +11,12 @@ body{
   border: 0;
   display: block;
   box-sizing: border-box;
-
   background: white;
+}
+#header {
+  position: fixed;
+  width:100%;
+  z-index: 100;
 }
 
 #cover-canvas { 
