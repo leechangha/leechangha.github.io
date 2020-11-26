@@ -16,6 +16,7 @@ body {
 }
 /* toggle */
 .toggle {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -102,6 +103,9 @@ body {
 }
 
 @media (max-width: 767px){
+    .toggle {
+      display: inline;
+    }
     .navigation{
         left: -60px;
     }
