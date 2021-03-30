@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://127.0.0.1:5555/project/newportfolio/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="./Document_files/index.js" defer=""></script>
+  <title>Document</title>
+<link rel="stylesheet" href="./Document_files/style.css"></head>
+<body>
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <i class="fab fa-diaspora"></i>
+      <a href="http://127.0.0.1:5555/project/newportfolio/index.html#">Enzo</a>
+    </div>
+    <div class="navbar__menu_container">
+      <ul id="test" class="navbar__menu">
+        <li class="navbar__menu_item active" data-link="#home">Home</li>
+        <li class="navbar__menu_item" data-link="#about">About</li>
+        <li class="navbar__menu_item" data-link="#skills">Skills</li>
+        <li class="navbar__menu_item" data-link="#work">My work</li>
+        <li class="navbar__menu_item" data-link="#testimonials">testimonials</li>
+        <li class="navbar__menu_item" data-link="#contact">Contact</li>
+      </ul>  
+    </div>
+    <!-- Toggle Button -->
+    <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+  <!-- Home -->
+  <section id="home" class="benner">
+    <div class="home__dimed"></div>
+    <div class="home__container">
+      <h1 class="headline" style="width: 0px;">
+        <span class="words-wrapper"> 
+          <b class="fw_600 is-hidden">Web Developr&nbsp;</b>
+          <b class="fw_600 is-visible">Android Developer&nbsp;</b>
+          <b class="fw_600 is-hidden">FullStack Developer&nbsp;</b>
+        </span>
+      </h1>
+      <p class="description">안녕하세요. 엔조입니다. 저는 안드로이드 개발을 주로 하며 웹 프론트 앤드 개발도 합니다. 풀스택 개발자를 지향하고 있습니다. </p>
+      <button class="contactme">Contact Me</button>
+    </div>
+    <canvas class="home__bottom" width="967" height="100"></canvas>
+  </section>
+  <!-- About me -->
+  <section id="aboutme">
+    <div class="about__container">
+      <div class="about__img__wrappter">
+        <div class="rectange"></div>
+        <img src="./Document_files/enzo_profile_img.png" alt="" class="myimg">
+      </div>
+      <div class="about__info__wrapper">
+        <h1>I am Front-End Web Developer</h1>
+        <p>dsfdsfsdfdsdfsdsfsdgjksdhfjkdhsfjksdhfksdhfkjhskfh</p>
+      </div>
+    </div>
+  </section>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
